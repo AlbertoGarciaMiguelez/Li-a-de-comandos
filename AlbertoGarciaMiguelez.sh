@@ -343,9 +343,14 @@ find /home/usuario2 -type f -regex ".*[0-9]" -exec cp -r '{}' PRUEBA/correo/menu
 
 #72
 
-
+who
+cat "Hola mundo" | write usuario pts/1
 
 #73
+
+touch 0size
+ls -lah
+
 #74
 
 cat /etc/motd
