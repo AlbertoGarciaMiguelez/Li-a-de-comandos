@@ -142,3 +142,41 @@ rm -r PRUEBA/dir2/dir31/dir312/???q[^b]
 mv PRUEBA/dir2/dir31/dir312 PRUEBA/dir3
 
 #31
+
+ln -s /home/ubuntu/PRUEBA/dir1 PRUEBA/dir3/enlacedir1
+
+#32
+
+cd dir3 mkdir enlacedir1/nuevo1
+
+#33
+
+cp -r /bin/u* enlacedir1/nuevo1/
+
+#34
+
+ln fich1 dir1/enlace ln fich1 dir2/enlace
+
+#35
+
+rm fich1 cp dir1/enlace dir3/
+
+#36
+
+ln -s /home/ubuntu/PRUEBA/dir2 /home/ubuntu/PRUEBA/dir1/enlafich1
+
+#37
+
+cd dir1 cp enlafich1 ../dir2/dir31/dir311/fich1
+
+#38
+
+cat enlafich1
+
+#39
+
+rm dir2/fich1
+
+#40
+
+rm -r*
