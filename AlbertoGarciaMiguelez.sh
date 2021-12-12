@@ -230,6 +230,7 @@ umask 644 dir2
 
 #51
 
+mkdir dira dirb dirc dird
 
 #52
 #53
