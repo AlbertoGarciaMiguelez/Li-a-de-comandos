@@ -230,28 +230,121 @@ umask 644 dir2
 
 #51
 
+mkdir dira dirb dirc dird
 
 #52
+
+ls -l
+
 #53
+
+touch uno
+chmod a-r uno
+ls -l 
+rm uno
+
 #54
+
+chmod = dir2
+chmod o=rwx dir2
+
+
 #55
+
+mkdir carpeta1 carpeta2
+chmod u=rwx,g=,o= carpeta1
+chmod u=rwx,g=rx,o= carpeta2
+touch carpeta1/fich1 touch carpeta1/fich2
+chmod = carpeta1/{fich1,fich2}
+chmod o=rw carpeta1/fich1
+ls -l carpeta1
+touch carpeta2/file1 touch carpeta2/file2
+chmod = carpeta2/{file1,file2}
+chmod u=rw,g=rw carpeta2/file1
+chmod u=rw,g=r carpeta2/file2
+ls -l carpeta2
+
 #56
+
+su Usuario2
+contraseña:
+cd carpeta1
+ls carpeta1
+(denegado)
+
 #57
+
+pwd
+mkdir correo fuentes
+
 #58
+
+cd fuentes
+mkdir dir1 dir2 dir3
+
 #59
+
+mkdir ../correo/menus
+
 #60
+
+cd /home/
+find PRUEBA/fuentes -type d -name "*1" -exec rm -r {} \;
+
 #61
+
+find PRUEBA/fuentes -type d -name "tty2" -exec ls -l {};
+
 #62
+
+ls -l /dev/tt*
+
 #63
+
+find /usr/bin -type f
+
 #64
+
+ls /
+find / -maxdepth 1 -type d
+
 #65
+
+find / -user root -type f
+
 #66
+
+find /usr/include -type f -regex ".*.h"
+
 #67
+
+ls /bin/ls*
+
 #68
+
+find /home/us3rlinux -exec file --mime-type -0 '{}' \;
+
 #69
+
+mkdir uno
+chmod u=rw,g=rw,o= uno 
+ls -ld uno
+
 #70
+
+chmod u=rwx,g=rwx,o= uno
+mkdir uno/uno1
+chmod u=rwx,g=,o=w uno/uno1
+ls -ld uno/uno1
+
 #71
+
+find /home/usuario2 -type f -regex ".*[0-9]" -exec cp -r '{}' PRUEBA/correo/menus/ ;
+
 #72
+
+
+
 #73
 #74
 #75
