@@ -347,6 +347,78 @@ find /home/usuario2 -type f -regex ".*[0-9]" -exec cp -r '{}' PRUEBA/correo/menu
 
 #73
 #74
+
+cat /etc/motd
+
 #75
+
+who |grep $USER |sort -k 4 > persona
+
 #76
+
+mkdir carpeta
+chmod 333 carpeta
+find ~ -type d > direc
+mv direc carpeta
+
 #77
+
+find ~ -type d 2> carpeta/malo
+
+#78
+
+find /etc/ -type f >> carpeta/direc
+
+#79
+
+find ./ -type f -not -iname ai 1> nuevalista 2> malos find ./ -type f -iname ai 1> nuevalista 2> malos
+
+#80
+
+time who
+
+#81
+
+ps -U root -u root u
+
+#82
+
+ps -U root -u root u | grep -v "'ls /dev'" >> proceso
+
+#83
+
+echo "'date +"%A %D"' - 'pwd'" >>proceso
+
+#84
+
+ps axu
+
+#85
+
+top
+
+#86
+
+ps -e
+
+#87
+
+cat /etc/passwd | wc -l
+
+#88
+
+cat /etc/passwd | grep bash
+
+#89
+
+who -q
+
+#90
+
+grep '^L' libro.txt 
+grep '^l' libro.txt 
+
+#91
+
+grep -c '^l' libro.txt
+grep -c '^L' libro.txt
