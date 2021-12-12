@@ -90,7 +90,7 @@ mkdir PRUEBA/dir3/dir31/dir312
 
 #18
 
-sudo touch /etc/motd PRUEBA/mensaje
+cp -v /etc/motd PRUEBA/mensaje
 
 #19
 
@@ -180,3 +180,80 @@ rm dir2/fich1
 #40
 
 rm -r*
+#41
+
+cd PRUEBA
+mkdir dir1 mkdir dir2
+ls -l
+
+#42
+
+chmod 555 dir2
+
+#43
+
+chmod 551 dir2
+
+#44
+
+ls -la ./dir2
+
+#45
+
+mkdir dir2/dir2l
+
+#46
+
+chmod 751 dir2
+mkdir dir2/dir2l
+
+#47
+
+ls -l dir2
+
+#48
+
+cd PRUEBA
+mv dir2 dir3
+cd dir3
+
+#49
+
+ls -l
+(drwxr-x--x)
+#50
+
+cd PRUEBA
+umask 744 dir2l
+umask 744 dir3
+umask 644 dir2
+
+#51
+
+
+#52
+#53
+#54
+#55
+#56
+#57
+#58
+#59
+#60
+#61
+#62
+#63
+#64
+#65
+#66
+#67
+#68
+#69
+#70
+#71
+#72
+#73
+#74
+#75
+#76
+#77
